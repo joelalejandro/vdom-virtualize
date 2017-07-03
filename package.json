@@ -1,5 +1,5 @@
 {
-  "name": "vdom-virtualize",
+  "name": "vdom-virtualize-redist",
   "version": "2.0.0",
   "description": "Virtualize any DOM node and turn it into a virtual-dom node.",
   "main": "index.js",
@@ -8,16 +8,18 @@
     "virtual-dom": "2.x"
   },
   "devDependencies": {
-    "virtual-dom": "2.0.1",
+    "browserify": "^14.4.0",
     "expect.js": "0.3.x",
+    "virtual-dom": "2.0.1",
     "zuul": "3.x"
   },
   "scripts": {
+    "build": "browserify ./index.js -o dist/vdom-virtualize.js",
     "test": "zuul -- test/test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:marcelklehr/vdom-virtualize.git"
+    "url": "git@github.com:joelalejandro/vdom-virtualize.git"
   },
   "keywords": [
     "virtual-dom",
@@ -27,7 +29,7 @@
   "author": "Marcel Klehr <mklehr@gmx.net>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/marcelklehr/vdom-virtualize/issues"
+    "url": "https://github.com/joelalejandro/vdom-virtualize/issues"
   },
-  "homepage": "https://github.com/marcelklehr/vdom-virtualize"
+  "homepage": "https://github.com/joelalejandro/vdom-virtualize"
 }
